@@ -1,0 +1,26 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "Blog application that allows user to create blog posts, sign in to see their saved posts, edit and comment on posts.  ",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RLAQUEA/tech-blog.git"
+  },
+  "keywords": [
+    "tech",
+    "blog",
+    "node.js",
+    "handlebars"
+  ],
+  "author": "Rachel E LaQuea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RLAQUEA/tech-blog/issues"
+  },
+  "homepage": "https://github.com/RLAQUEA/tech-blog#readme"
+}
