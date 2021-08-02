@@ -9,16 +9,17 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: Post,
-          attributes: ['title', 'body']
+          attributes: ['id', 'title', 'body', 'user_id'],
         },
       ],
     });
-const allPosts = dbBlogData.map((post) => post.get({plain: true})
+const allPosts = dbBlogData.map((post) => post.get({ plain: true })
 );
     //The render method acts on the Handlebars.js template and connects the route to its appropriate template
 
     res.render('homepage', {
       allPosts,
+      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);
@@ -44,7 +45,7 @@ router.get('/post/:id', async (req, res) => {
     });
 
     const post = dbPostData.get({ plain: true });
-    res.render('post', { post });
+    res.render('post', { post, loggedIn: req.session.loggedIn  });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
