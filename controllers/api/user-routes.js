@@ -1,5 +1,9 @@
-const router = require('express').Router();
+const userRoutes = require('express').Router();
 const { User } = require('../../models');
+
+//GET
+
+
 
 // router.post('/', async (req, res) => {
 //     try {
@@ -69,5 +73,5 @@ const { User } = require('../../models');
 //     }
 //   });
   
-//   module.exports = router;
+  module.exports = userRoutes;
   

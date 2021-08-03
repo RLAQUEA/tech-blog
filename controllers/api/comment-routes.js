@@ -1,6 +1,16 @@
-const commentRoute = require('express').Router();
+const commentRoutes = require('express').Router();
+const { Comment } = require('../../models/Comment')
 
-router.get('/', async (req, res) => {
+//GET
+commentRoutes.get('/', async (req, res) => {
 
 });
 
+
+//POST
+
+
+//PUT
+
+
+module.exports = commentRoutes;
