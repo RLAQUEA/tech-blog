@@ -1,23 +1,21 @@
-const router = require('express').Router();
+const dashboardRoutes = require('express').Router();
 const { Comment, User, Post } = require('../models');
+const withAuth = require('../utils/auth');
+
 // GET to all posts 
-// router.get('/', async (req, res) => {
-// try {
+dashboardRoutes.get('/', withAuth, (req, res) => {
+post.findAll()
+})
 
-// })
+// GET to dashboard 
+dashboardRoutes.get('/dashboard'), withAuth, (req, res) => {
 
+}
 
-//GET to dashboard 
+// GET id of edited Post route (PUT)
+dashboardRoutes.get('/dashboard'), withAuth, (req, res) => {
 
-// router.get('/dashboard'), async (req, res) => {
-// try {
-
-// } catch {
-
-// }
-// })
+}
 
 
-
-
-module.exports = router;
+module.exports = dashboardRoutes;
