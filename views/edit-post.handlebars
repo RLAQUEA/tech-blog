@@ -1,8 +1,6 @@
   <div class="entry">
-      {{#each allPosts}} 
-    <h1><a href="/post/{{id}}">{{title}}</a></h1>
-    <div>This was posted by: {{User.username}}
-    </div>
+      {{#each editedPosts}} 
+    <h1><a href="/post/{{id}}">{{editedPosts.id}} {{editedPosts.title}} {{editedPosts.title}}</a></h1>
     <div class="body">
       {{body}}
     </div>
