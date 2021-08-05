@@ -2,7 +2,6 @@
 const homeRoutes = require('express').Router();
 const { Comment, User, Post } = require('../models');
 
-
 // // GET all blog posts for homepage
 homeRoutes.get('/', async (req, res) => {
   try {
