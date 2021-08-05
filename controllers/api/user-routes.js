@@ -6,11 +6,12 @@ userRoutes.post('/', async (req, res) => {
     try {
       const dbUserData = await User.create({
         username: req.body.username,
-        email: req.body.email,
         password: req.body.password,
       });
   
       req.session.save(() => {
+        req.session.user_id = dbUserData.id;
+        req.session.username = dbUserData.username;
         req.session.loggedIn = true;
   
         res.status(200).json(dbUserData);
@@ -26,7 +27,6 @@ userRoutes.post('/', async (req, res) => {
     try {
       const dbUserData = await User.findOne({
         where: {
-        email: req.body.email,
         password: req.body.password,
         username: req.body.username,
         },
