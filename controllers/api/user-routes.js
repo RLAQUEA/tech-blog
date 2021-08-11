@@ -22,7 +22,7 @@ userRoutes.post('/', async (req, res) => {
     }
   });
   
-  // Login
+  // POST to login
   userRoutes.post('/login', async (req, res) => {
     try {
       const dbUserData = await User.findOne({
@@ -61,7 +61,7 @@ userRoutes.post('/', async (req, res) => {
     }
   });
   
-  // Logout
+  // POST to logout
   userRoutes.post('/logout', (req, res) => {
     if (req.session.loggedIn) {
       req.session.destroy(() => {
