@@ -12,6 +12,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
+        console.log('being redirected');
         document.location.replace('/dashboard');
       } else {
         alert('Failed to log in.');

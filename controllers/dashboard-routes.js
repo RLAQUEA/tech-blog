@@ -3,11 +3,11 @@ const { Comment, User, Post } = require('../models');
 const withAuth = require('../utils/auth');
 
 // GET to all posts 
-dashboardRoutes.get('/', withAuth, (req, res) => {
-const postData = Post.findAll({where: {userId: req.sessions.userId}})
+dashboardRoutes.get('/', withAuth, async (req, res) => {
+const postData = await Post.findAll({where: {id: req.session.user_id}})
 const posts = postData.map(post => post.get({plain: true}))
-res.render('all-posts-admin', {layout: 'dashboard', posts})
-if (err) throw err
+res.render('all-post-admin', {layout: 'dashboard', posts})
+// if (err) throw err
 })
 
 // GET to dashboard 
