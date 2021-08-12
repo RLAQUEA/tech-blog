@@ -8,6 +8,7 @@ homeRoutes.get('/', async (req, res) => {
     const dbBlogData = await Post.findAll({
       include: [User]
     });
+    console.log(dbBlogData);
 const allPosts = dbBlogData.map((post) => post.get({ plain: true })
 );
     //The render method acts on the Handlebars.js template and connects the route to its appropriate template
