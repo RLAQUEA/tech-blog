@@ -1,5 +1,6 @@
 //Get route for getting all blog posts
 const homeRoutes = require('express').Router();
+// const allPosts;
 const { Comment, User, Post } = require('../models');
 
 // // GET all blog posts for homepage
@@ -9,7 +10,7 @@ homeRoutes.get('/', async (req, res) => {
       include: [User]
     });
     console.log(dbBlogData);
-const allPosts = dbBlogData.map((post) => post.get({ plain: true })
+allPosts = dbBlogData.map((post) => post.get({ plain: true })
 );
     //The render method acts on the Handlebars.js template and connects the route to its appropriate template
     res.render('all-posts', {

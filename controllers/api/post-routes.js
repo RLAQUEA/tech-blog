@@ -4,7 +4,7 @@ const withAuth = require('../../utils/auth');
 
 //POST to add a new blog post
 postRoutes.post('/', withAuth, (req, res) => {
-const newPost = Post.create({...req.body, userId: req.session.userId})
+const newPost = Post.create({...req.body, user_id: req.session.user_id})
 res.json(newPost)
 if(err) throw err
 })
