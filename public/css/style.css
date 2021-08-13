@@ -1,0 +1,51 @@
+.center {
+ background-color: powderblue;
+ color: white;
+ text-align: center;
+}
+
+nav {
+background-color: powderblue;
+color: white;
+text-align: center;
+padding: 2%;
+}
+
+a {
+color: white;
+background-color: rebeccapurple;
+font-style: none;
+font-size: 26px;
+padding: 1%;
+}
+
+a:hover {
+color: rebeccapurple;
+background-color: white;
+}
+
+h2 {
+    color: white;
+    background-color: navy;
+    text-align: center;
+    margin: 0% 33% 0% 33%;
+    padding: 1%;
+    line-height: 90%;
+}
+
+
+.post-card .col-form-label {
+border: solid black 3%;
+margin: 3%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 20%;
+}
+
+.btn {
+color: white;
+background-color: rebeccapurple;
+}
+
