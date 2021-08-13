@@ -25,21 +25,11 @@ allPosts = dbBlogData.map((post) => post.get({ plain: true })
 
 // GET one blog post
 homeRoutes.get('/post/:id', async (req, res) => {
+  console.log("looking for post #", req.params.id);
   try {
-    const dbPostData = await Post.findByPk(req.params.id, {
-      include: [
-        User, 
-        {
-          model: Comment,
-          attributes: [
-           User
-          ],
-        },
-      ],
-    });
-
+    const dbPostData = await Post.findByPk(req.params.id);
     const post = dbPostData.get({ plain: true });
-    res.render('post', { post });
+    res.render('single-post', { post });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

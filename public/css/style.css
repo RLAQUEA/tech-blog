@@ -24,14 +24,14 @@ color: rebeccapurple;
 background-color: white;
 }
 
-h2 {
-    color: white;
-    background-color: navy;
+/* h2 {
+    color: rebeccapurple;;
+    background-color:gray;
     text-align: center;
     margin: 0% 33% 0% 33%;
     padding: 1%;
     line-height: 90%;
-}
+} */
 
 
 .post-card .col-form-label {
@@ -49,3 +49,9 @@ color: white;
 background-color: rebeccapurple;
 }
 
+h2 .page-title {
+    max-width: 20%;
+    align-items: center;
+    justify-content: center;
+
+}

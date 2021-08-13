@@ -1,11 +1,6 @@
   {{!-- SINGLE POST BY ID VIEW --}}
   <div class="entry">
-      {{#each allPosts}} 
-    <h1><a href="/post/:id{{id}}">{{title}}</a></h1>
-    <div>This was posted by: {{User.username}}
-    </div>
-    <div class="body">
-      {{body}}
-    </div>
-    {{/each}}
+      <p>{{post.title}}</p>
+       <p>{{post.body}}</p>
+      <p>{{post.id}}</p>
   </div>
