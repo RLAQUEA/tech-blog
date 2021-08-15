@@ -8,10 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  
+  <link rel="stylesheet" type="text/css" href="/css/style.css"> 
 </head>
-<body class="center">
+
+<body>
   <header>
     <h1 class="center">Welcome to your Dashboard</h1>
   </header>
@@ -20,9 +20,10 @@
     <a href="/dashboard">Dashboard</a>
     <a id="logout" href="#">Logout</a>
   </nav>
-      {{!-- button to go to new-post route & new post view --}}
-  <a href="/dashboard/new-post"><button class="btn" >Add new blog post</button></a>
+    <div class="center">
 
+  <a href="/dashboard/new-post"><button class="btn" >Add new blog post</button></a>
+</div>
     <main>
     {{{body}}}
   </main>

@@ -1,57 +1,83 @@
-.center {
- background-color: powderblue;
- color: white;
- text-align: center;
-}
 
 nav {
-background-color: powderblue;
+background-color: rgb(88, 70, 88);
 color: white;
 text-align: center;
 padding: 2%;
+align-items: center;
+margin: auto;
 }
 
 a {
 color: white;
-background-color: rebeccapurple;
+background-color: rgb(88, 70, 88);
 font-style: none;
 font-size: 26px;
 padding: 1%;
+margin: auto;
 }
 
 a:hover {
-color: rebeccapurple;
+color: rgb(88, 70, 88);
 background-color: white;
+font-style: none;
+font-size: 26px;
+padding: 1%;
+margin: auto;
 }
 
-/* h2 {
-    color: rebeccapurple;;
-    background-color:gray;
-    text-align: center;
-    margin: 0% 33% 0% 33%;
-    padding: 1%;
-    line-height: 90%;
-} */
-
-
-.post-card .col-form-label {
-border: solid black 3%;
-margin: 3%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-max-width: 20%;
+h1.center {
+margin: auto;
 }
+
 
 .btn {
 color: white;
-background-color: rebeccapurple;
+background-color:  rgb(88, 70, 88);
+margin-top: 5%;
+font-size: 24px;
+padding: 5%;
+margin: auto;
 }
 
 h2 .page-title {
     max-width: 20%;
     align-items: center;
     justify-content: center;
+    margin: auto;
+}
 
+
+div.center {
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+border-style: solid black 2px;
+max-width: 25%;
+max-height: 30%;
+margin: auto;
+color: black;
+
+}
+
+.create-post{
+display: flex;
+flex-direction: column;
+text-align: center;
+background-color: none;
+align-items: center;
+justify-content: space-evenly;
+max-width: 35%;
+max-height: 30%;
+margin: auto;
+}
+
+
+.clicked-post {
+    margin: auto;
+}
+
+body {
+background-color: lightsteelblue;
 }
